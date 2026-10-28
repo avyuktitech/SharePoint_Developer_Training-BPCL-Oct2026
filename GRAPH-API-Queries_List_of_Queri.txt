@@ -1,0 +1,101 @@
+********** GRAPH-API- Queries - List of Queries *********
+
+1. Get Query: - for to get the sharepoint site details:
+
+https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.com:/sites/ajay-spsite11
+
+2. Get - Query - Search Site - with Site by ID :
+
+https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4
+
+
+3. Get - Query - Key Fields - I want to display : 
+
+https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4?$select=displayName, webUrl, createdDateTime
+
+4. Get- Query - Lists & Columns:
+
+https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists?$select=id,displayName,list
+
+5. POST - QUERY - Create a List called "Tasks"
+
+https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists
+
+===== in the request BODY use the below query ===
+
+{
+  "displayName": "Tasks22",
+  "columns": [
+    {
+      "name": "Status",
+      "choice": { "choices": ["Open", "In Progress", "Closed"] }
+    }
+  ],
+  "list": { "template": "genericList" }
+}
+
+6. POST Query - Add an ITEM to the TASK 
+
+https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists/Tasks/items
+
+{
+	"fields": {
+	 "Title": "Learn GRAPH API",
+	 "Status": "Open"
+  }
+}
+
+7. POST Query - Adding ITEMS : https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists/Tasks/items
+
+
+
+{ "fields": {"Title": "Write REST queries", "Status": "Open"} }
+
+{ "fields": {"Title": "Deploy .sppkg to App Catelog", "Status": "In Progress"} }
+
+{ "fields": {"Title": "Test Power Automate flow", "Status": "Closed"} }
+
+
+ ******* all in one go -> Open , Closed, in Progress ***
+
+{
+  "requests": [
+    {
+      "id": "1",
+      "method": "POST",
+      "url": "/sites/rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists/Tasks/items",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "fields": { "Title": "Write REST queries", "Status": "Open" } }
+    },
+    {
+      "id": "2",
+      "method": "POST",
+      "url": "/sites/rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists/Tasks/items",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "fields": { "Title": "Deploy .sppkg to App Catalog", "Status": "In Progress" } }
+    },
+    {
+      "id": "3",
+      "method": "POST",
+      "url": "/sites/rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists/Tasks/items",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "fields": { "Title": "Test Power Automate flow", "Status": "Closed" } }
+    }
+  ]
+}
+
+
+8 . PATCH query - to update -> Items - Status 
+
+
+https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists/Tasks/items/1/fields
+
+{ "Status": "Open"}
+
+9. DELETE - QUERY - just mention Item number 
+
+https://graph.microsoft.com/v1.0/sites/rt091126.sharepoint.com,039cfb99-76b0-47ad-8db2-1482fce75f70,01ea7126-310f-4d9a-97d3-b88019a5dad4/lists/Tasks/items/1/
+
+
+-> later if you want to restore - please restore from recycle-BIN
+
