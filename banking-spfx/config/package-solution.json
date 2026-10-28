@@ -1,0 +1,44 @@
+﻿{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "banking-client-side-solution",
+                     "id":  "84463af8-c861-4063-af28-691c26ea2c3e",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "Responsive banking landing page sample"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "Responsive banking landing page sample"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "Horizon Banking Feature",
+                                          "description":  "Activates the Horizon Banking web part.",
+                                          "id":  "4f5b4bfc-d7c1-405f-a6c1-72974d50d908",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/banking.sppkg"
+              }
+}

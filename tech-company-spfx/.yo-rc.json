@@ -1,0 +1,21 @@
+﻿{
+    "@microsoft/generator-sharepoint":  {
+                                            "useGulp":  false,
+                                            "plusBeta":  false,
+                                            "isCreatingSolution":  true,
+                                            "nodeVersion":  "22.23.4",
+                                            "sdksVersions":  {
+
+                                                             },
+                                            "version":  "1.23.2",
+                                            "libraryName":  "northstar",
+                                            "libraryId":  "b7a17bd5-a952-41b3-9429-ec8ff6b114af",
+                                            "environment":  "spo",
+                                            "packageManager":  "npm",
+                                            "solutionName":  "northstar",
+                                            "solutionShortDescription":  "React technology company homepage",
+                                            "skipFeatureDeployment":  true,
+                                            "isDomainIsolated":  false,
+                                            "componentType":  "webpart"
+                                        }
+}

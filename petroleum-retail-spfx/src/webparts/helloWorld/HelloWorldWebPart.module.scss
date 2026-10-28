@@ -1,0 +1,65 @@
+$brand: #e0601b;
+$accent: #d9541a;
+$ink: #2b211b;
+$muted: #85776d;
+$line: #eee5df;
+$ground: #faf7f5;
+$tint: #fbeee6;
+
+.dashboard { font-family: 'Segoe UI', sans-serif; color: $ink; background: $ground; border: 1px solid $line; border-radius: 10px; overflow: hidden; min-height: 570px; }
+.header { height: 66px; background: #fff; border-bottom: 1px solid $line; padding: 0 4%; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-weight: 700; font-size: 16px; color: $ink; }
+.logo span { background: $brand; color: #fff; border-radius: 8px; display: inline-flex; width: 28px; height: 28px; align-items: center; justify-content: center; margin-right: 9px; font-size: 14px; }
+.headerRight { display: flex; align-items: center; gap: 18px; font-size: 11px; color: $muted; }
+.live { font-size: 9px; letter-spacing: 1px; color: $muted; }
+.live i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #dba950; margin-right: 6px; }
+.avatar { background: $tint; color: $accent; padding: 8px; border-radius: 50%; font-size: 10px; font-weight: 600; }
+
+.content { max-width: 1140px; margin: auto; padding: 34px 34px 15px; }
+.heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 24px; }
+.kicker { color: $muted; font-size: 9px; letter-spacing: 1.5px; margin: 0 0 9px; }
+.heading h1 { font-size: 26px; margin: 0; font-weight: 600; letter-spacing: -.5px; }
+.sub { margin: 7px 0 0; color: $muted; font-size: 12px; }
+.heading label { font-size: 9px; letter-spacing: 1px; color: $muted; }
+.heading select { display: block; margin-top: 7px; min-width: 200px; border: 1px solid $line; border-radius: 5px; padding: 10px; background: #fff; color: $ink; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.stats article, .panel { background: #fff; border: 1px solid $line; border-radius: 7px; }
+.stats article { padding: 17px 18px; display: flex; flex-direction: column; gap: 10px; border-top: 3px solid $brand; }
+.stats article > span { font-size: 9px; color: $muted; letter-spacing: .8px; }
+.stats strong { font-size: 26px; font-weight: 600; }
+.stats strong small { font-size: 12px; color: $muted; font-weight: 400; }
+.stats em { font-size: 10px; color: $muted; font-style: normal; }
+.stats .good { color: #2f8a62; }
+
+.lower { display: grid; grid-template-columns: 1.12fr .88fr; gap: 14px; margin-top: 14px; }
+.panel { padding: 20px; }
+.panelTitle h2 { font-size: 14px; margin: 0; }
+.panelTitle p { color: $muted; font-size: 10px; margin: 5px 0 0; }
+.chart { margin-top: 24px; }
+.barRow { display: grid; grid-template-columns: 135px 1fr 35px; gap: 10px; align-items: center; font-size: 10px; color: $muted; margin: 15px 0; }
+.barRow > div { height: 8px; border-radius: 5px; background: $tint; overflow: hidden; }
+.barRow i { display: block; height: 100%; background: $accent; border-radius: 5px; }
+.barRow b { font-size: 10px; text-align: right; color: $ink; }
+.chartFoot { border-top: 1px solid $line; padding-top: 11px; color: $muted; font-size: 9px; }
+.chartFoot b { color: $accent; margin-left: 5px; }
+
+.note { display: flex; gap: 11px; align-items: start; border-bottom: 1px solid $line; padding: 15px 0; }
+.note:last-child { border: 0; }
+.note > i { flex: none; width: 23px; height: 23px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-style: normal; font-size: 11px; }
+.amber { color: #b8832e; background: #fbf2df; }
+.green { color: #388166; background: #e9f4ef; }
+.blue { color: #49789a; background: #ebf2f8; }
+.red { color: #c0392b; background: #fbe9e7; }
+.note b { font-size: 11px; font-weight: 600; }
+.note p { margin: 5px 0 0; color: $muted; font-size: 9px; }
+.content footer { color: $muted; font-size: 9px; text-align: center; padding: 22px 0 7px; }
+
+@media (max-width: 760px) {
+  .content { padding: 24px 16px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .lower { grid-template-columns: 1fr; }
+  .heading { align-items: start; gap: 18px; flex-direction: column; }
+  .headerRight { gap: 9px; }
+  .live { display: none; }
+}

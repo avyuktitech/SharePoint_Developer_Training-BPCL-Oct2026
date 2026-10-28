@@ -1,0 +1,44 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "carepoint-client-side-solution",
+                     "id":  "719e17bd-6aa5-4536-be47-a5680be20938",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "React hospital operations sample"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "React hospital operations sample"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "CarePoint Health Feature",
+                                          "description":  "Activates the CarePoint Health web part.",
+                                          "id":  "40f2e728-2bc7-42b1-8c53-4157499b0802",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/carepoint.sppkg"
+              }
+}

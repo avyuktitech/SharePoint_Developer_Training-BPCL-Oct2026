@@ -1,0 +1,44 @@
+﻿{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "bpcl-client-side-solution",
+                     "id":  "61eed448-6f0a-4c3e-9841-6e1825161694",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "React operations overview sample"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "React operations overview sample"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "BPCL Operations Pane Feature",
+                                          "description":  "Activates the BPCL Operations Pane web part.",
+                                          "id":  "762d85ce-27a1-4772-8ba0-04cbf5a87ac8",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/bpcl.sppkg"
+              }
+}

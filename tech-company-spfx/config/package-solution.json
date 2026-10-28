@@ -1,0 +1,44 @@
+﻿{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "northstar-client-side-solution",
+                     "id":  "b7a17bd5-a952-41b3-9429-ec8ff6b114af",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "React technology company homepage"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "React technology company homepage"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "Northstar Digital Feature",
+                                          "description":  "Activates the Northstar Digital web part.",
+                                          "id":  "582914a7-fc62-4c1a-805b-b9762b115b42",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/northstar.sppkg"
+              }
+}
