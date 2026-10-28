@@ -1,0 +1,44 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "apexfuels-client-side-solution",
+                     "id":  "bdb80fd7-eedb-4745-813b-39fc4300c446",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "React fuel retail network sample"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "React fuel retail network sample"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "Apex Fuels Retail Feature",
+                                          "description":  "Activates the Apex Fuels Retail web part.",
+                                          "id":  "b8c69662-898b-4776-a010-faaf56fb6f2e",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/apexfuels.sppkg"
+              }
+}

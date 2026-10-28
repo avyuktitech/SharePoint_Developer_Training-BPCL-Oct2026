@@ -1,0 +1,21 @@
+{
+    "@microsoft/generator-sharepoint":  {
+                                            "useGulp":  false,
+                                            "plusBeta":  false,
+                                            "isCreatingSolution":  true,
+                                            "nodeVersion":  "22.23.4",
+                                            "sdksVersions":  {
+
+                                                             },
+                                            "version":  "1.23.2",
+                                            "libraryName":  "carepoint",
+                                            "libraryId":  "719e17bd-6aa5-4536-be47-a5680be20938",
+                                            "environment":  "spo",
+                                            "packageManager":  "npm",
+                                            "solutionName":  "carepoint",
+                                            "solutionShortDescription":  "React hospital operations sample",
+                                            "skipFeatureDeployment":  true,
+                                            "isDomainIsolated":  false,
+                                            "componentType":  "webpart"
+                                        }
+}

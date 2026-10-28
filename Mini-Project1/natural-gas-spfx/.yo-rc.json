@@ -1,0 +1,21 @@
+{
+    "@microsoft/generator-sharepoint":  {
+                                            "useGulp":  false,
+                                            "plusBeta":  false,
+                                            "isCreatingSolution":  true,
+                                            "nodeVersion":  "22.23.4",
+                                            "sdksVersions":  {
+
+                                                             },
+                                            "version":  "1.23.2",
+                                            "libraryName":  "meridian",
+                                            "libraryId":  "4576ff40-1edb-4422-8c01-167d1bef09e8",
+                                            "environment":  "spo",
+                                            "packageManager":  "npm",
+                                            "solutionName":  "meridian",
+                                            "solutionShortDescription":  "React natural gas network sample",
+                                            "skipFeatureDeployment":  true,
+                                            "isDomainIsolated":  false,
+                                            "componentType":  "webpart"
+                                        }
+}

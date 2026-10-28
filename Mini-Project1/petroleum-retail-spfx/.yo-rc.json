@@ -1,0 +1,21 @@
+{
+    "@microsoft/generator-sharepoint":  {
+                                            "useGulp":  false,
+                                            "plusBeta":  false,
+                                            "isCreatingSolution":  true,
+                                            "nodeVersion":  "22.23.4",
+                                            "sdksVersions":  {
+
+                                                             },
+                                            "version":  "1.23.2",
+                                            "libraryName":  "apexfuels",
+                                            "libraryId":  "bdb80fd7-eedb-4745-813b-39fc4300c446",
+                                            "environment":  "spo",
+                                            "packageManager":  "npm",
+                                            "solutionName":  "apexfuels",
+                                            "solutionShortDescription":  "React fuel retail network sample",
+                                            "skipFeatureDeployment":  true,
+                                            "isDomainIsolated":  false,
+                                            "componentType":  "webpart"
+                                        }
+}

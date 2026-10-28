@@ -1,0 +1,44 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "meridian-client-side-solution",
+                     "id":  "4576ff40-1edb-4422-8c01-167d1bef09e8",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "React natural gas network sample"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "React natural gas network sample"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "Meridian Gas Network Feature",
+                                          "description":  "Activates the Meridian Gas Network web part.",
+                                          "id":  "d7cb6d71-d386-4632-99f7-a52468d62210",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/meridian.sppkg"
+              }
+}
