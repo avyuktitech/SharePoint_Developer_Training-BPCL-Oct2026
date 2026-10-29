@@ -1,0 +1,50 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "pnptasks-client-side-solution",
+                     "id":  "4e2c5703-fd13-4e79-873a-00af441debab",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "PnPjs SharePoint list CRUD with Microsoft Graph people search"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "PnPjs SharePoint list CRUD with Microsoft Graph people search"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "PnP Task Tracker Feature",
+                                          "description":  "Activates the PnP Task Tracker web part.",
+                                          "id":  "75b1bf3c-e5c7-4c38-b6fd-338afd5737d2",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ],
+                     "webApiPermissionRequests":  [
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "User.ReadBasic.All"
+                                                      }
+                                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/pnptasks.sppkg"
+              }
+}

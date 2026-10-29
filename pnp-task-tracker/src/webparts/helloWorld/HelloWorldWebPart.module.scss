@@ -1,0 +1,41 @@
+$brand: #5b3fd1;
+$ink: #1f1b33;
+$muted: #6f6a85;
+$line: #e6e3f0;
+
+.app { font-family: 'Segoe UI', sans-serif; color: $ink; background: #fbfaff; border: 1px solid $line; border-radius: 10px; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.kicker { color: $brand; font-size: 9px; letter-spacing: 1.5px; margin: 0 0 6px; font-weight: 600; }
+.header h1 { margin: 0; font-size: 24px; font-weight: 600; }
+.counts { display: flex; gap: 8px; }
+.counts span { background: #fff; border: 1px solid $line; border-radius: 6px; padding: 8px 12px; font-size: 10px; color: $muted; display: flex; flex-direction: column; }
+.counts b { font-size: 18px; color: $ink; }
+
+.form { display: grid; grid-template-columns: 2fr 1.5fr 150px auto; gap: 8px; background: #fff; border: 1px solid $line; border-radius: 8px; padding: 12px; }
+.form input, .table select { border: 1px solid $line; border-radius: 5px; padding: 9px 10px; font: inherit; font-size: 12px; color: $ink; background: #fff; min-width: 0; }
+.picker { position: relative; display: flex; }
+.picker > input { flex: 1; }
+.picker ul { position: absolute; z-index: 2; top: 100%; left: 0; right: 0; margin: 4px 0 0; padding: 4px; list-style: none; background: #fff; border: 1px solid $line; border-radius: 6px; box-shadow: 0 6px 18px rgba(0, 0, 0, .08); }
+.picker li button { width: 100%; text-align: left; background: none; border: 0; padding: 7px 8px; border-radius: 4px; cursor: pointer; display: flex; flex-direction: column; font: inherit; }
+.picker li button:hover { background: #f1eefc; }
+.picker small, .table small { color: $muted; font-size: 10px; display: block; }
+.chip { display: inline-flex; align-items: center; gap: 6px; background: #f1eefc; color: $brand; border-radius: 14px; padding: 6px 10px; font-size: 12px; align-self: center; }
+.chip button { border: 0; background: none; color: $brand; cursor: pointer; font-size: 14px; padding: 0; }
+.primary { background: $brand; color: #fff; border: 0; border-radius: 5px; padding: 9px 16px; font-weight: 600; cursor: pointer; }
+
+.error { background: #fdecea; color: #a4262c; border-radius: 6px; padding: 10px 12px; font-size: 12px; }
+.empty { color: $muted; text-align: center; padding: 30px 0; font-size: 13px; }
+.table { width: 100%; border-collapse: collapse; margin-top: 14px; background: #fff; border: 1px solid $line; border-radius: 8px; font-size: 12px; }
+.table th { text-align: left; font-size: 10px; letter-spacing: .6px; color: $muted; font-weight: 600; padding: 10px 12px; border-bottom: 1px solid $line; }
+.table td { padding: 10px 12px; border-bottom: 1px solid $line; vertical-align: middle; }
+.done td:first-child { text-decoration: line-through; color: $muted; }
+.remove { background: none; border: 1px solid $line; border-radius: 5px; padding: 6px 10px; color: #a4262c; cursor: pointer; font-size: 11px; }
+.app footer { color: $muted; font-size: 10px; text-align: center; margin-top: 16px; }
+
+@media (max-width: 760px) {
+  .app { padding: 16px; }
+  .form { grid-template-columns: 1fr; }
+  .table thead { display: none; }
+  .table tr { display: grid; grid-template-columns: 1fr auto; padding: 8px 0; border-bottom: 1px solid $line; }
+  .table td { border: 0; padding: 4px 12px; }
+}

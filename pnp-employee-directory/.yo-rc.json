@@ -1,0 +1,21 @@
+{
+    "@microsoft/generator-sharepoint":  {
+                                            "useGulp":  false,
+                                            "plusBeta":  false,
+                                            "isCreatingSolution":  true,
+                                            "nodeVersion":  "22.23.4",
+                                            "sdksVersions":  {
+
+                                                             },
+                                            "version":  "1.23.2",
+                                            "libraryName":  "pnpdirectory",
+                                            "libraryId":  "ce87a2b2-a639-46a3-9269-fa20d84f547a",
+                                            "environment":  "spo",
+                                            "packageManager":  "npm",
+                                            "solutionName":  "pnpdirectory",
+                                            "solutionShortDescription":  "Microsoft Graph people search and profiles using PnPjs",
+                                            "skipFeatureDeployment":  true,
+                                            "isDomainIsolated":  false,
+                                            "componentType":  "webpart"
+                                        }
+}

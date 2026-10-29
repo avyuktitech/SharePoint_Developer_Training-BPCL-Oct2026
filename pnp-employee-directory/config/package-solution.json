@@ -1,0 +1,58 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "pnpdirectory-client-side-solution",
+                     "id":  "ce87a2b2-a639-46a3-9269-fa20d84f547a",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "Microsoft Graph people search and profiles using PnPjs"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "Microsoft Graph people search and profiles using PnPjs"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "PnP Employee Directory Feature",
+                                          "description":  "Activates the PnP Employee Directory web part.",
+                                          "id":  "0c1514f8-dede-44d3-b272-27c439e4ce7e",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ],
+                     "webApiPermissionRequests":  [
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "User.Read"
+                                                      },
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "User.ReadBasic.All"
+                                                      },
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "User.Read.All"
+                                                      }
+                                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/pnpdirectory.sppkg"
+              }
+}

@@ -1,0 +1,21 @@
+{
+    "@microsoft/generator-sharepoint":  {
+                                            "useGulp":  false,
+                                            "plusBeta":  false,
+                                            "isCreatingSolution":  true,
+                                            "nodeVersion":  "22.23.4",
+                                            "sdksVersions":  {
+
+                                                             },
+                                            "version":  "1.23.2",
+                                            "libraryName":  "pnpworkday",
+                                            "libraryId":  "e30cc289-987e-4843-a3c6-772e1c90bb2a",
+                                            "environment":  "spo",
+                                            "packageManager":  "npm",
+                                            "solutionName":  "pnpworkday",
+                                            "solutionShortDescription":  "Personal calendar, mail and files from Microsoft Graph using PnPjs",
+                                            "skipFeatureDeployment":  true,
+                                            "isDomainIsolated":  false,
+                                            "componentType":  "webpart"
+                                        }
+}

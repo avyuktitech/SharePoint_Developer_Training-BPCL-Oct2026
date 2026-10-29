@@ -1,0 +1,37 @@
+$brand: #0b6a8f;
+$ink: #14262f;
+$muted: #6b7f88;
+$line: #e0e9ed;
+
+.app { font-family: 'Segoe UI', sans-serif; color: $ink; background: #f6fafb; border: 1px solid $line; border-radius: 10px; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.kicker { color: $brand; font-size: 9px; letter-spacing: 1.5px; margin: 0 0 6px; font-weight: 600; }
+.header h1 { margin: 0; font-size: 24px; font-weight: 600; }
+.sub { color: $muted; font-size: 12px; margin: 5px 0 0; }
+.search { border: 1px solid $line; border-radius: 6px; padding: 10px 12px; font: inherit; font-size: 13px; width: 280px; max-width: 100%; background: #fff; }
+
+.error { background: #fdecea; color: #a4262c; border-radius: 6px; padding: 10px 12px; font-size: 12px; }
+.empty { color: $muted; text-align: center; padding: 30px 0; font-size: 13px; grid-column: 1 / -1; }
+.layout { display: grid; grid-template-columns: 1fr 300px; gap: 14px; align-items: start; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; }
+.card { display: flex; align-items: center; gap: 10px; text-align: left; background: #fff; border: 1px solid $line; border-radius: 8px; padding: 10px; cursor: pointer; font: inherit; color: $ink; min-width: 0; }
+.card:hover { border-color: $brand; }
+.card > span { min-width: 0; }
+.card b { display: block; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card small { display: block; font-size: 10px; color: $muted; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.active { border-color: $brand; box-shadow: 0 0 0 2px rgba(11, 106, 143, .15); }
+.avatar, .avatarBig { flex: none; border-radius: 50%; background: #dceef4; color: $brand; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; object-fit: cover; }
+.avatar { width: 38px; height: 38px; font-size: 12px; }
+.avatarBig { width: 76px; height: 76px; font-size: 22px; }
+
+.detail { background: #fff; border: 1px solid $line; border-radius: 8px; padding: 20px; position: sticky; top: 12px; }
+.detail h2 { margin: 12px 0 0; font-size: 17px; }
+.detail dl { margin: 16px 0 0; display: grid; grid-template-columns: 70px 1fr; gap: 8px; font-size: 12px; }
+.detail dt { color: $muted; }
+.detail dd { margin: 0; word-break: break-word; }
+
+@media (max-width: 760px) {
+  .app { padding: 16px; }
+  .layout { grid-template-columns: 1fr; }
+  .detail { position: static; }
+}

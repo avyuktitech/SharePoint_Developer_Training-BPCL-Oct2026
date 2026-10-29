@@ -1,0 +1,33 @@
+$brand: #c2410c;
+$ink: #2a1e17;
+$muted: #857368;
+$line: #efe4dc;
+
+.app { font-family: 'Segoe UI', sans-serif; color: $ink; background: #fffaf6; border: 1px solid $line; border-radius: 10px; padding: 24px; }
+.header { margin-bottom: 18px; }
+.kicker { color: $brand; font-size: 9px; letter-spacing: 1.5px; margin: 0 0 6px; font-weight: 600; }
+.header h1 { margin: 0; font-size: 26px; font-weight: 600; letter-spacing: -.4px; }
+.sub { color: $muted; font-size: 12px; margin: 6px 0 0; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.panel { background: #fff; border: 1px solid $line; border-radius: 8px; padding: 18px; min-width: 0; }
+.panel h2 { font-size: 14px; margin: 0 0 6px; display: flex; justify-content: space-between; align-items: baseline; }
+.panel h2 small { font-size: 10px; color: $muted; font-weight: 400; }
+.panel ul { list-style: none; margin: 0; padding: 0; }
+.panel li { display: flex; gap: 12px; align-items: center; padding: 11px 0; border-bottom: 1px solid $line; }
+.panel li:last-child { border: 0; }
+.what { min-width: 0; font-size: 12px; }
+.what a { color: $ink; text-decoration: none; }
+.what a:hover { color: $brand; text-decoration: underline; }
+.what small { display: block; color: $muted; font-size: 10px; margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.when { flex: none; width: 64px; font-size: 10px; color: $muted; display: flex; flex-direction: column; }
+.when b { font-size: 13px; color: $brand; }
+.dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: $brand; }
+.fileIcon { flex: none; width: 34px; height: 34px; border-radius: 6px; background: #fdeee4; color: $brand; font-size: 9px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.empty { color: $muted; font-size: 12px; padding: 18px 0; text-align: center; }
+.error { background: #fdecea; color: #a4262c; border-radius: 6px; padding: 10px 12px; font-size: 11px; word-break: break-word; }
+
+@media (max-width: 760px) {
+  .app { padding: 16px; }
+  .grid { grid-template-columns: 1fr; }
+}
