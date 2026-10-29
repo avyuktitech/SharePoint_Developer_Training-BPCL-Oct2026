@@ -1,6 +1,6 @@
 # SharePoint Framework mini-projects
 
-Seven independent SPFx 1.23.2 web part samples:
+Ten independent SPFx 1.23.2 web part samples:
 
 | Project | Sample |
 | --- | --- |
@@ -11,6 +11,16 @@ Seven independent SPFx 1.23.2 web part samples:
 | `medical-spfx` | React-based hospital operations dashboard for the fictional CarePoint Health |
 | `natural-gas-spfx` | React-based natural gas pipeline dashboard for the fictional Meridian Gas Network |
 | `petroleum-retail-spfx` | React-based fuel station network dashboard for the fictional Apex Fuels Retail |
+
+### Hands-on: PnPjs + Microsoft Graph
+
+| Project | Sample |
+| --- | --- |
+| `pnp-task-tracker` | SharePoint list CRUD with `@pnp/sp` and a Microsoft Graph people picker |
+| `pnp-employee-directory` | People search, profile photos and manager lookup with `@pnp/graph` |
+| `pnp-my-workday` | Personal dashboard: Graph calendar, unread mail, recent files, plus site libraries via `@pnp/sp` |
+
+These three call Microsoft Graph, so after uploading the package a SharePoint admin must approve the requested permissions in **SharePoint admin center → Advanced → API access**. Each project's README lists the scopes.
 
 Each project can be run independently from its folder:
 

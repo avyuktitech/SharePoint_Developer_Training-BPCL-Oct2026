@@ -1,0 +1,21 @@
+{
+    "@microsoft/generator-sharepoint":  {
+                                            "useGulp":  false,
+                                            "plusBeta":  false,
+                                            "isCreatingSolution":  true,
+                                            "nodeVersion":  "22.23.4",
+                                            "sdksVersions":  {
+
+                                                             },
+                                            "version":  "1.23.2",
+                                            "libraryName":  "pnptasks",
+                                            "libraryId":  "4e2c5703-fd13-4e79-873a-00af441debab",
+                                            "environment":  "spo",
+                                            "packageManager":  "npm",
+                                            "solutionName":  "pnptasks",
+                                            "solutionShortDescription":  "PnPjs SharePoint list CRUD with Microsoft Graph people search",
+                                            "skipFeatureDeployment":  true,
+                                            "isDomainIsolated":  false,
+                                            "componentType":  "webpart"
+                                        }
+}

@@ -1,0 +1,62 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "pnpworkday-client-side-solution",
+                     "id":  "e30cc289-987e-4843-a3c6-772e1c90bb2a",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "Personal calendar, mail and files from Microsoft Graph using PnPjs"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "Personal calendar, mail and files from Microsoft Graph using PnPjs"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "PnP My Workday Feature",
+                                          "description":  "Activates the PnP My Workday web part.",
+                                          "id":  "ed5400d6-7032-42da-8723-96df777aac8b",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ],
+                     "webApiPermissionRequests":  [
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "User.Read"
+                                                      },
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "Calendars.Read"
+                                                      },
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "Mail.Read"
+                                                      },
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "Files.Read"
+                                                      }
+                                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/pnpworkday.sppkg"
+              }
+}
