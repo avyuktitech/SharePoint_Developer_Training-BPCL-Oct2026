@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.23.4",
+    "sdksVersions": {},
+    "version": "1.23.2",
+    "libraryName": "azureblob",
+    "libraryId": "21fd1f48-e68c-4503-966d-645297af416e",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "azureblob",
+    "solutionShortDescription": "Browse files, images and text content from an Azure Blob Storage container",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

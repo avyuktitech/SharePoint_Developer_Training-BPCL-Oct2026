@@ -1,6 +1,6 @@
 # SharePoint Framework mini-projects
 
-Twelve independent SPFx 1.23.2 samples:
+Fourteen independent SPFx 1.23.2 samples:
 
 | Project | Sample |
 | --- | --- |
@@ -28,6 +28,15 @@ These four call Microsoft Graph, so after uploading the package a SharePoint adm
 | Project | Sample |
 | --- | --- |
 | `spfx-approval-extension` | ListView Command Set that sends purchase requests to a Power Automate approval flow, with a step-by-step flow guide |
+
+### Hands-on: Azure data services
+
+| Project | Sample |
+| --- | --- |
+| `azure-blob-spfx` | Browse files, images and text from Azure Blob Storage using the signed-in user's Entra ID token |
+| `azure-sql-spfx` | Browse tables, files and images from Azure SQL Database through a secured Azure Functions API |
+
+Both start with built-in sample data. To connect them to Azure, follow the setup steps in each project's README.
 
 Each project can be run independently from its folder:
 

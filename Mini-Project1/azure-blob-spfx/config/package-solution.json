@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "azureblob-client-side-solution",
+    "id": "21fd1f48-e68c-4503-966d-645297af416e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Sample project",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Browse files, images and text content from an Azure Blob Storage container"
+      },
+      "longDescription": {
+        "default": "Browse files, images and text content from an Azure Blob Storage container"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Azure Blob Explorer Feature",
+        "description": "Activates the Azure Blob Explorer web part.",
+        "id": "3aa81876-8f34-405a-bebf-5941d424ef53",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Azure Storage",
+        "scope": "user_impersonation"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/azureblob.sppkg"
+  }
+}

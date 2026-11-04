@@ -1,0 +1,5 @@
+Welcome to the Contoso sample database!
+
+These files are not on a file share. Each one is a row in the dbo.Documents
+table, with its bytes in a VARBINARY(MAX) column. The Azure Functions API reads
+a row and returns the bytes, and this web part previews them.

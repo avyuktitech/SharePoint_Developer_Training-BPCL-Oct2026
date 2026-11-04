@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "azuresql-client-side-solution",
+    "id": "9ac4ad15-983d-44d9-a096-245a1842cc48",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Sample project",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Browse tables, files and images from Azure SQL Database through a secured Azure Functions API"
+      },
+      "longDescription": {
+        "default": "Browse tables, files and images from Azure SQL Database through a secured Azure Functions API"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Azure SQL Explorer Feature",
+        "description": "Activates the Azure SQL Explorer web part.",
+        "id": "09c42fa6-c723-42c4-9b44-3cffea7c9e34",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "SPFx Azure SQL Sample API",
+        "scope": "user_impersonation"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/azuresql.sppkg"
+  }
+}

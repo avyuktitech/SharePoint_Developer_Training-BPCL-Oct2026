@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "azureblob-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/azureBlobExplorer/AzureBlobExplorerWebPart.js",
+          "manifest": "./src/webparts/azureBlobExplorer/AzureBlobExplorerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {}
+}

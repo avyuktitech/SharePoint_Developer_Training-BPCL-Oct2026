@@ -1,0 +1,52 @@
+$brand: #0f6cbd;
+$brand-dark: #0b4f8a;
+$tint: #ebf3fc;
+$ink: #1b2a3a;
+$muted: #55677a;
+$line: #d9e4ef;
+
+.app { font-family: 'Segoe UI', sans-serif; color: $ink; background: #fbfdff; border: 1px solid $line; border-radius: 10px; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+.header h2 { margin: 0; font-size: 24px; font-weight: 600; }
+.kicker { color: $brand; font-size: 11px; letter-spacing: 1.5px; margin: 0 0 6px; font-weight: 600; }
+.source { margin: 4px 0 0; color: $muted; font-size: 13px; }
+
+.primary, .secondary { border-radius: 5px; padding: 8px 14px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; flex: none; }
+.primary { background: $brand; color: #fff; border: 1px solid $brand; }
+.primary:hover { background: $brand-dark; }
+.secondary { background: #fff; color: $brand; border: 1px solid $brand; }
+.secondary:disabled { opacity: .5; cursor: default; }
+
+.notice, .error { border-radius: 6px; padding: 10px 12px; font-size: 13px; margin: 0 0 14px; }
+.notice { background: $tint; color: $brand-dark; }
+.error { background: #fdecea; color: #a4262c; }
+.empty { color: $muted; text-align: center; padding: 30px 12px; font-size: 13px; margin: 0; list-style: none; }
+.note { color: $muted; font-size: 12px; margin: 8px 0 0; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.filter, .filterActive { border-radius: 14px; padding: 5px 12px; font: inherit; font-size: 12px; cursor: pointer; border: 1px solid $line; background: #fff; color: $muted; }
+.filterActive { background: $brand; border-color: $brand; color: #fff; }
+
+.split { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+.list { flex: 1 1 240px; min-width: 0; margin: 0; padding: 6px; list-style: none; background: #fff; border: 1px solid $line; border-radius: 8px; max-height: 520px; overflow-y: auto; }
+.file, .fileActive { width: 100%; display: flex; align-items: center; gap: 10px; padding: 8px; background: none; border: 0; border-radius: 6px; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.file:hover { background: #f3f7fb; }
+.fileActive { background: $tint; }
+.badge { flex: none; width: 36px; padding: 4px 0; text-align: center; border-radius: 4px; background: $tint; color: $brand-dark; font-size: 10px; font-weight: 700; }
+.fileActive .badge { background: #fff; }
+.fileText { min-width: 0; display: flex; flex-direction: column; }
+.fileName { font-size: 13px; overflow-wrap: anywhere; }
+.fileText small { color: $muted; font-size: 11px; }
+
+.preview { flex: 2 1 340px; min-width: 0; background: #fff; border: 1px solid $line; border-radius: 8px; padding: 14px; }
+.previewHeader { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.previewTitle { min-width: 0; }
+.previewTitle h3 { margin: 0; font-size: 15px; font-weight: 600; overflow-wrap: anywhere; }
+.previewTitle small { color: $muted; font-size: 11px; }
+.image { display: block; max-width: 100%; max-height: 460px; margin: 0 auto; border-radius: 6px; }
+.text { margin: 0; padding: 12px; background: #f6f8fa; border-radius: 6px; font-family: Consolas, 'Courier New', monospace; font-size: 12px; line-height: 1.5; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 460px; overflow-y: auto; }
+
+.tableWrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.table th { text-align: left; color: $muted; font-weight: 600; background: #f6f8fa; }
+.table th, .table td { padding: 7px 10px; border-bottom: 1px solid $line; white-space: nowrap; }

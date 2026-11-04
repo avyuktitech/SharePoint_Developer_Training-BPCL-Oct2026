@@ -1,0 +1,5 @@
+Welcome to the Contoso sample container!
+
+Everything you see in this web part is a file in an Azure Blob Storage container.
+Pick a file on the left to preview it. Text, CSV and images open right here,
+and every file can be downloaded.

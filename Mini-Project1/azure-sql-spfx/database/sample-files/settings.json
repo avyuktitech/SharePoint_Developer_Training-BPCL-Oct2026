@@ -1,0 +1,8 @@
+{
+  "region": "Central India",
+  "currency": "INR",
+  "features": {
+    "catalog": true,
+    "exports": true
+  }
+}

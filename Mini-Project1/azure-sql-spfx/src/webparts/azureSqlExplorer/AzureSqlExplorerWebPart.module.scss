@@ -1,0 +1,61 @@
+$brand: #5b4bc4;
+$brand-dark: #43369a;
+$tint: #efedfb;
+$ink: #221f36;
+$muted: #5f5b76;
+$line: #e0deef;
+
+.app { font-family: 'Segoe UI', sans-serif; color: $ink; background: #fcfcff; border: 1px solid $line; border-radius: 10px; padding: 24px; }
+.header { margin-bottom: 16px; }
+.header h2 { margin: 0; font-size: 24px; font-weight: 600; }
+.kicker { color: $brand; font-size: 11px; letter-spacing: 1.5px; margin: 0 0 6px; font-weight: 600; }
+.source { margin: 4px 0 0; color: $muted; font-size: 13px; }
+
+.primary, .secondary { border-radius: 5px; padding: 8px 14px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; flex: none; }
+.primary { background: $brand; color: #fff; border: 1px solid $brand; }
+.primary:hover { background: $brand-dark; }
+.secondary { background: #fff; color: $brand; border: 1px solid $brand; }
+.secondary:disabled { opacity: .5; cursor: default; }
+
+.notice, .error { border-radius: 6px; padding: 10px 12px; font-size: 13px; margin: 0 0 14px; }
+.notice { background: $tint; color: $brand-dark; }
+.error { background: #fdecea; color: #a4262c; }
+.empty { color: $muted; text-align: center; padding: 30px 12px; font-size: 13px; margin: 0; }
+
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid $line; margin-bottom: 14px; }
+.tab, .tabActive { background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: 8px 14px; font: inherit; font-size: 13px; font-weight: 600; color: $muted; cursor: pointer; }
+.tabActive { color: $brand; border-bottom-color: $brand; }
+
+.cards { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.card, .cardActive { flex: 1 1 130px; display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; background: #fff; border: 1px solid $line; border-radius: 8px; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.card:hover { border-color: $brand; }
+.cardActive { background: $tint; border-color: $brand; }
+.cardName { font-size: 14px; font-weight: 600; }
+.card small, .cardActive small { color: $muted; font-size: 11px; }
+
+.panel { background: #fff; border: 1px solid $line; border-radius: 8px; padding: 14px; }
+.description { color: $muted; font-size: 13px; margin: 0 0 10px; }
+.tableWrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.table th { text-align: left; color: $muted; font-weight: 600; background: #f7f7fb; }
+.table th, .table td { padding: 7px 10px; border-bottom: 1px solid $line; white-space: nowrap; }
+.pager { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; font-size: 12px; color: $muted; }
+
+.split { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+.list { flex: 1 1 220px; min-width: 0; margin: 0; padding: 6px; list-style: none; background: #fff; border: 1px solid $line; border-radius: 8px; max-height: 520px; overflow-y: auto; }
+.file, .fileActive { width: 100%; display: flex; align-items: center; gap: 10px; padding: 8px; background: none; border: 0; border-radius: 6px; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.file:hover { background: #f6f5fc; }
+.fileActive { background: $tint; }
+.badge { flex: none; width: 36px; padding: 4px 0; text-align: center; border-radius: 4px; background: $tint; color: $brand-dark; font-size: 10px; font-weight: 700; }
+.fileActive .badge { background: #fff; }
+.fileText { min-width: 0; display: flex; flex-direction: column; }
+.fileName { font-size: 13px; overflow-wrap: anywhere; }
+.fileText small { color: $muted; font-size: 11px; }
+
+.preview { flex: 2 1 340px; min-width: 0; background: #fff; border: 1px solid $line; border-radius: 8px; padding: 14px; }
+.previewHeader { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.previewTitle { min-width: 0; }
+.previewTitle h3 { margin: 0; font-size: 15px; font-weight: 600; overflow-wrap: anywhere; }
+.previewTitle small { color: $muted; font-size: 11px; }
+.image { display: block; max-width: 100%; max-height: 460px; margin: 0 auto; border-radius: 6px; }
+.text { margin: 0; padding: 12px; background: #f7f7fb; border-radius: 6px; font-family: Consolas, 'Courier New', monospace; font-size: 12px; line-height: 1.5; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 460px; overflow-y: auto; }
