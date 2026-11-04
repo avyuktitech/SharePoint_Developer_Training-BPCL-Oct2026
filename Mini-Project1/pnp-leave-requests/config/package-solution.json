@@ -1,0 +1,62 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "pnpleave-client-side-solution",
+                     "id":  "1234f76c-f524-4514-828d-d3e2dcf7e463",
+                     "version":  "1.0.1.0",
+                     "includeClientSideAssets":  true,
+                     "skipFeatureDeployment":  true,
+                     "isDomainIsolated":  false,
+                     "developer":  {
+                                       "name":  "Sample project",
+                                       "websiteUrl":  "",
+                                       "privacyUrl":  "",
+                                       "termsOfUseUrl":  "",
+                                       "mpnId":  "Undefined-1.23.2"
+                                   },
+                     "metadata":  {
+                                      "shortDescription":  {
+                                                               "default":  "Leave request and approval workflow using PnPjs and Microsoft Graph"
+                                                           },
+                                      "longDescription":  {
+                                                              "default":  "Leave request and approval workflow using PnPjs and Microsoft Graph"
+                                                          },
+                                      "screenshotPaths":  [
+
+                                                          ],
+                                      "videoUrl":  "",
+                                      "categories":  [
+
+                                                     ]
+                                  },
+                     "features":  [
+                                      {
+                                          "title":  "PnP Leave Requests Feature",
+                                          "description":  "Activates the PnP Leave Requests web part.",
+                                          "id":  "3e5c59e2-4786-474f-a82a-9dc2f2e275ca",
+                                          "version":  "1.0.0.0"
+                                      }
+                                  ],
+                     "webApiPermissionRequests":  [
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "User.Read"
+                                                      },
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "User.ReadBasic.All"
+                                                      },
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "Mail.Send"
+                                                      },
+                                                      {
+                                                          "resource":  "Microsoft Graph",
+                                                          "scope":  "Calendars.ReadWrite"
+                                                      }
+                                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/pnpleave.sppkg"
+              }
+}

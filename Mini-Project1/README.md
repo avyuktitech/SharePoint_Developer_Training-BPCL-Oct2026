@@ -1,6 +1,6 @@
 # SharePoint Framework mini-projects
 
-Ten independent SPFx 1.23.2 web part samples:
+Twelve independent SPFx 1.23.2 samples:
 
 | Project | Sample |
 | --- | --- |
@@ -19,8 +19,15 @@ Ten independent SPFx 1.23.2 web part samples:
 | `pnp-task-tracker` | SharePoint list CRUD with `@pnp/sp` and a Microsoft Graph people picker |
 | `pnp-employee-directory` | People search, profile photos and manager lookup with `@pnp/graph` |
 | `pnp-my-workday` | Personal dashboard: Graph calendar, unread mail, recent files, plus site libraries via `@pnp/sp` |
+| `pnp-leave-requests` | Leave approval workflow: SharePoint list with `@pnp/sp`, plus Graph manager lookup, email notifications and calendar events |
 
-These three call Microsoft Graph, so after uploading the package a SharePoint admin must approve the requested permissions in **SharePoint admin center → Advanced → API access**. Each project's README lists the scopes.
+These four call Microsoft Graph, so after uploading the package a SharePoint admin must approve the requested permissions in **SharePoint admin center → Advanced → API access**. Each project's README lists the scopes.
+
+### Hands-on: SharePoint extension + Power Automate
+
+| Project | Sample |
+| --- | --- |
+| `spfx-approval-extension` | ListView Command Set that sends purchase requests to a Power Automate approval flow, with a step-by-step flow guide |
 
 Each project can be run independently from its folder:
 

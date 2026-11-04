@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-approval-extension-client-side-solution",
+    "id": "daa189bf-80e5-4055-80c0-75087a3e4fdc",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Sample project",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "List command that sends purchase requests to a Power Automate approval flow"
+      },
+      "longDescription": {
+        "default": "List command that sends purchase requests to a Power Automate approval flow"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Send for Approval Command",
+        "description": "Adds the Send for approval command to the Purchase Requests list.",
+        "id": "28c993fc-7415-41ee-a744-bb13abe16b9a",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-approval-extension.sppkg"
+  }
+}

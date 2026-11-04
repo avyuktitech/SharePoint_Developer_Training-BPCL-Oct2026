@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="ApprovalCommandSet"
+        RegistrationId="100"
+        RegistrationType="List"
+        Location="ClientSideExtension.ListViewCommandSet.CommandBar"
+        ClientSideComponentId="c635c115-7885-48ae-a4f7-ad8ac452650f"
+        ClientSideComponentProperties="{&quot;targetListTitle&quot;:&quot;Purchase Requests&quot;}">
+    </CustomAction>
+</Elements>
